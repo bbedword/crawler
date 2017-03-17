@@ -1,0 +1,30 @@
+{
+   "urlReg" :"http://baojian.jianke.com/news/\\d*.html",
+   "isOk" :"",
+   "params" :{
+      "content" :{
+         "reg" :"#contentText",
+         "vt" :"INNERHTML"
+      },
+      "tags" :{
+         "reg" :"body > div.news_wrap > div.wrap.m_b_15.clearfix > div.art_con_left > div.art_box.m_b_15 > div.attention.m_b_10 > div.label",
+         "vt" :"TEXT"
+      },
+      "title" :{
+         "reg" :"body > div.news_wrap > div.wrap.m_b_15.clearfix > div.art_con_left > div.art_box.m_b_15 > h1",
+         "vt" :"TEXT"
+      },
+      "catalog" :{
+         "reg" :"body > div.news_wrap > div.news_location",
+         "vt" :"TEXT"
+      },
+      "publishTime_from" :{
+         "reg" :"body > div.news_wrap > div.wrap.m_b_15.clearfix > div.art_con_left > div.art_box.m_b_15 > div.art_info.m_b_15",
+         "vt" :"TEXT"
+      }
+   },
+   "db" :"health",
+   "dataTable" :"zixun-jiankezixun",
+   "isStoreHtml" :true,
+   "htmlTable" :"html"
+}

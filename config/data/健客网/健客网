@@ -1,0 +1,7 @@
+{
+   "name" :"健客网",
+   "seedUrl" :"http://www.jianke.com/news/",
+   "threadNum" :20,
+   "charset" :"utf-8",
+   "createTime" :0
+}

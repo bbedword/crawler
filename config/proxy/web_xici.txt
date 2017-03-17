@@ -1,0 +1,11 @@
+{
+   "url" :"http://www.xicidaili.com/nn/@",
+   "pageStart":1,
+   "pageEnd":20,
+   "line" :"#ip_list > tbody > tr",
+   "ip" :"td:nth-child(2)",
+   "port" :"td:nth-child(3)",
+   "anonymity" :"td:nth-child(5)",
+   "type" :"td:nth-child(6)",
+   "address" :"td:nth-child(4) > a"
+}

@@ -1,0 +1,38 @@
+{
+   "urlReg" :"http://www.jianke.com/news/\\d*.html",
+   "isOk" :"body > div.w1000.clearfix > div.content.fl > div.article > h1",
+   "params" :{
+      "summary" :{
+         "reg" :"body > div.w1000.clearfix > div.content.fl > div.article > div.summary",
+         "vt" :"TEXT"
+      },
+      "content" :{
+         "reg" :"body > div.w1000.clearfix > div.content.fl > div.article > div.art_cont",
+         "vt" :"INNERHTML"
+      },
+      "tags" :{
+         "reg" :"body > div.w1000.clearfix > div.content.fl > div.article > div.tag > span.tab",
+         "vt" :"TEXT"
+      },
+      "title" :{
+         "reg" :"body > div.w1000.clearfix > div.content.fl > div.article > h1",
+         "vt" :"TEXT"
+      },
+      "publishTime" :{
+         "reg" :"body > div.w1000.clearfix > div.content.fl > div.article > div.tag > span.data",
+         "vt" :"TEXT"
+      },
+      "catalog" :{
+         "reg" :"body > div.top > div > div.location.fl",
+         "vt" :"TEXT"
+      },
+      "from" :{
+         "reg" :"body > div.w1000.clearfix > div.content.fl > div.article > div.tag > span.origin",
+         "vt" :"TEXT"
+      }
+   },
+   "db" :"health",
+   "dataTable" :"zixun-jianke",
+   "isStoreHtml" :true,
+   "htmlTable" :"html"
+}

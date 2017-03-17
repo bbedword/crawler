@@ -1,0 +1,11 @@
+{
+   "url" :"http://www.kuaidaili.com/free/inha/@",
+   "pageStart":1,
+   "pageEnd":20,
+   "line" :"#list > table > tbody > tr",
+   "ip" :"td:nth-child(1)",
+   "port" :"td:nth-child(2)",
+   "anonymity" :"td:nth-child(3)",
+   "type" :"td:nth-child(4)",
+   "address" :"td:nth-child(5)"
+}

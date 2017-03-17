@@ -1,0 +1,4 @@
+<sitemesh>
+	//被装饰的页面
+	<mapping path="/*" decorator="/frame/frame.jsp" />
+</sitemesh>

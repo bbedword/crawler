@@ -1,0 +1,11 @@
+{
+   "url" :"http://www.bigdaili.com/dailiip/1/@.html",
+   "pageStart":1,
+   "pageEnd":10,
+   "line" :"#nav_btn01 > div:nth-child(11) > table > tbody > tr",
+   "ip" :"td:nth-child(1)",
+   "port" :"td:nth-child(2)",
+   "anonymity" :"td:nth-child(3)",
+   "type" :"td:nth-child(4)",
+   "address" :"td:nth-child(6)"
+}
