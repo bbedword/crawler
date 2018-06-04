@@ -28,7 +28,7 @@ public class Http {
   }
 
   public Response get(String url) throws IOException {
-    Connection con = Jsoup.connect(url).userAgent(userAgent);
+    Connection con = Jsoup.connect(url);//.userAgent(userAgent);
     return con.timeout(timeout).execute();
   }
 
@@ -40,6 +40,12 @@ public class Http {
       con.proxy(new Proxy(Type.HTTP, new InetSocketAddress(proxy.getIp(), proxy.getPort())));
     }
     return con.timeout(timeout).execute();
+  }
+
+  public static void main(String[] args) throws IOException {
+    Http http = new Http();
+    Response response = http.get("http://news.sina.com.cn/");
+    System.err.println(response.body());
   }
 
   public void allotProxy(String url) {

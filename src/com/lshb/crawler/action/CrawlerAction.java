@@ -64,8 +64,13 @@ public class CrawlerAction extends BaseAction {
 
 	@At("/start")
 	@Ok("redirect:list")
-	public void start(@Param("name") String name) {
-		CrawlerManager.start(name);
+	public void start(@Param("name")final String name) {
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				CrawlerManager.start(name);
+			}
+		}).start();
 	}
 
 	@At("/stop")

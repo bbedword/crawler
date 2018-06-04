@@ -54,7 +54,8 @@ public class Crawler implements Runnable {
       Response res = null;
       try {
         log.info(Thread.currentThread().getName() + "开始爬取url:" + url);
-        res = http.getWithProxy(url);
+        res = http.get(url);
+        log.info("下载了一个url:"+url);
       } catch (Exception e) {
         if (dealException(url, e)) {
           continue;

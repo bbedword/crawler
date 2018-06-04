@@ -81,7 +81,7 @@ public class ProxyFromWebManager {
 		if (!set.contains(str)) {
 			proxys.add(p);
 			set.add(str);
-			log.info("新增一个代理：" + str);
+//			log.info("新增一个代理：" + str);
 		}
 	}
 
